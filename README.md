@@ -15,18 +15,19 @@ A Python toolkit that combines the Set-of-Mark prompting with additional feature
    cd som_plus
    pip install -e .
 
-2. Clone & Install SAM2
+2. **Clone & Install SAM2**
 
-cd ..
-git clone https://github.com/facebookresearch/sam2.git
-cd sam2
-pip install -e .
+   ```bash
+   cd ..
+   git clone https://github.com/facebookresearch/sam2.git
+   cd sam2
+   pip install -e .
 
 3. Download SAM2 checkpoint
-
-mkdir -p checkpoints
-wget https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_base_plus.pt \
-     -O checkpoints/sam2.1_hiera_base_plus.pt
+   ```bash
+   mkdir -p checkpoints
+   wget https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_base_plus.pt \
+        -O checkpoints/sam2.1_hiera_base_plus.pt
 
 
 ## Demo 
