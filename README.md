@@ -1,6 +1,19 @@
 # SoM+ Package
 
-A Python toolkit that combines the Set-of-Mark prompting with additional feature augmentations for each of the annotations. Segmentation is performed with MaskFormer/SAM2 and then augmented via Gemini 2.0 Flash.
+A Python toolkit that combines the Set-of-Mark prompting with additional feature augmentations for each of the annotations. Segmentation is performed with MaskFormer/SAM2 and then augmented via Gemini 2.0 Flash. 
+
+[Pipeline_overview.pdf](https://github.com/user-attachments/files/19961195/Pipeline_overview.pdf)
+Figure 1: The SoM+ pipeline with Parallel approach (top) and Unified approach (bottom). Both methods generate structured
+semantic descriptions from segmented regions to enhance visual grounding
+
+## Quantitative results
+
+SoM+ Parallel improves visual grounding across both SAM 2 and MaskFormer segmentation methods when using Gemini 1.5 Pro. However, when using Gemini Flash 2.0 model, the benefit of semantic descriptions appears only in suboptimal segmentation settings (SAM 2 prompt based segmentation).
+Metric: Referring Expression Comprehension (REC) Accuracy - bounding box IoU > 50 %
+[maskformer_rec_accuracy.pdf](https://github.com/user-attachments/files/19961352/maskformer_rec_accuracy.pdf)
+RefCOCOg results with Maskformer segmentation.
+[sam2_rec_accuracy.pdf](https://github.com/user-attachments/files/19961353/sam2_rec_accuracy.pdf)
+RefCOCOg results with SAM 2 Segmentation.
 
 ## Prerequisites
 
