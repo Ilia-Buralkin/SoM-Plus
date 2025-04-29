@@ -51,4 +51,6 @@ RefCOCOg results with SAM 2 Segmentation.
 
 ## Demo 
 
+To get a better idea, run the demo below. Do not forget to define GEMINI_API_KEY with a .env file to configure genai. 
+
 demo.ipynb
